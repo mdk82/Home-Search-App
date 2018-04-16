@@ -9,3 +9,13 @@ body {
 #serverResponse{
   color: red;
 }
+
+table {
+  table-layout: fixed;
+  width: 100%
+}
+
+table td {
+  word-wrap: break-word;       
+  overflow-wrap: break-word;     
+}

@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require('express');
 const router = express.Router();
 const request = require('request');
@@ -8,7 +10,13 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/homeSearch', (req, res, next) => {
-    let apiKey = "X1-ZWz1dyb53fdhjf_6jziz";
+
+    // console.log(req.body.address);
+    // console.log(req.body.city);
+    // console.log(req.body.state);
+    // console.log(req.body.zipCode);
+
+    let apiKey = "X1-ZWz1dyb53fdhjf_6jziz"
     let address = req.body.address.split(" ").join("+");
     let citystatezip = req.body.city.split(" ").join("+") + "+" + req.body.state.split(" ").join("+")
      + "+" + req.body.zipCode;
