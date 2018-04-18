@@ -37,7 +37,7 @@ $(document).ready(()=>{
                 let tableRow = "<tr>";
                 let addressTableData = "<td>" + addressResult.street + "</td>" + "<td>" + addressResult.city + "</td>"
                 + "<td>" + addressResult.state + "</td>" + "<td>" + addressResult.zipcode + "</td>" 
-                + "<td>" + addressResult.latitude + "</td>" + "<td>" + addressResult.longitude + "</td>" + "<td>" + linksResult.comparables + "</td>" + "<td>" + zestimateResult.amount + "</td>";
+                + "<td>" + addressResult.latitude + "</td>" + "<td>" + addressResult.longitude + "</td>" + "<td>" + linksResult.comparables + "</td>" + "<td>" + "$" + zestimateResult.amount + "</td>";
 
                 tableRow += addressTableData;
                 tableRow += "</tr>";

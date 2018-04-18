@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
@@ -14,7 +15,11 @@
     "isomorphic-fetch": "^2.2.1",
     "morgan": "~1.8.1",
     "request": "^2.83.0",
+    "supertest": "^3.0.0",
     "xml2js": "^0.4.19"
+  },
+  "engines": {
+    "node": "9.10.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
